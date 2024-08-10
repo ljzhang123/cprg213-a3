@@ -173,12 +173,13 @@ header h1 {
 .booking-page {
     width: 600px;
     text-align: center;
-    margin-left: 175px;
+    margin: 0 auto;
     font-size: 18px;
 }
 
 .day-selector {
     margin-bottom: 12px;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -201,20 +202,12 @@ li, .small-button {
 
 #clear-button {
     width: 200px;
+    margin: 0 auto;
 }
 
-.clicked:checked {
+.clicked {
     background-color: #E5AF42;
 }
-
-
-
-
-
-
-
-
-
 
 
 /************* contact page *************/
@@ -226,6 +219,42 @@ li, .small-button {
     - the edges of the button will line up exactly with the text-area element. HINT: time for some math!
 */
 
+#contact-page {
+    height: 420px;
+    text-align: center;
+    margin: 0 auto;
+}
 
+.flex:has(#user-name), .flex:has(#user-email), .flex:has(#user-message) {
+    justify-content: center;
+    gap: 24px;
+}
 
+label {
+    width: 150px;
+    text-align: right;
+}
+
+input {
+    width: 300px;
+    border: 1px solid black;
+}
+
+textarea {
+    width: 300px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+form div:nth-child(n), button{
+    font-family: inherit;
+    line-height: 24px;
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+#submit-button {
+    width: 305px;
+    margin-left: 175px;
+}
 
