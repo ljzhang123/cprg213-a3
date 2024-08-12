@@ -50,6 +50,7 @@ function clearDays() {
 
     let costDisplay = document.getElementById("calculated-cost");
     costDisplay.innerHTML = "0";
+    dayCounter = 0;
 }
 
 
